@@ -474,13 +474,13 @@
                     <h3 class="text-3xl font-bold mb-6 hero-title-gradient">Who I Am</h3>
                     <div class="space-y-4 text-gray-300 leading-relaxed">
                         <p>
-                            I'm Emmanuel Justice, a Data Engineer with over 5 years of professional experience specializing in building scalable data pipelines, architecting modern data stacks, and transforming raw data into strategic business assets. My expertise spans the full data lifecycle—from ingestion and transformation to warehouse design and analytics enablement.
+                            I'm Emmanuel Justice, a Data Engineer with over 5 years of professional experience specializing in building scalable data pipelines, architecting modern data stacks, and transforming raw data into strategic business assets. My expertise spans the full data lifecycle from ingestion and transformation to warehouse design and analytics enablement.
                         </p>
                         <p>
                             With a strong foundation in Data Analytics, I bring a unique perspective that bridges the gap between engineering and business intelligence. I don't just build data infrastructure; I architect systems that empower data teams and drive measurable business outcomes through reliable, governed, and accessible data.
                         </p>
                         <p>
-                            My technical toolkit includes cloud platforms (AWS, GCP, Azure), modern data orchestration tools (Airflow, dbt), data warehousing solutions (Snowflake, BigQuery), and a wide range of ETL/ELT frameworks. I'm passionate about implementing best practices in data modeling, pipeline automation, and data quality management.
+                            My technical toolkit spans cloud platforms (Azure, AWS, GCP) including hands-on Azure data engineering with Data Factory, Databricks, and Synapse Analytics modern orchestration tools (Airflow, dbt), data warehousing solutions (Snowflake, BigQuery), and a wide range of ETL/ELT frameworks.
                         </p>
                     </div>
                 </div>
@@ -500,6 +500,7 @@
                             <p class="text-gray-400 mb-4">Building production-grade data infrastructure</p>
                             <ul class="list-disc list-inside text-gray-300 space-y-2">
                                 <li>Architecting and implementing end-to-end ELT/ETL pipelines using modern data stack (Airflow, dbt, Snowflake)</li>
+                                <li>Built a Medallion-architecture data pipeline on Azure (ADF, Databricks, Synapse Analytics) with governance via Microsoft Purview</li>
                                 <li>Designing scalable data warehouse solutions and implementing data modeling best practices</li>
                                 <li>Building serverless data processing systems on AWS (Lambda, S3, Glue)</li>
                                 <li>Implementing data quality frameworks and monitoring systems</li>
@@ -560,6 +561,7 @@
                             <li>• Cloud Infrastructure (AWS, GCP)</li>
                             <li>• Workflow Orchestration (Airflow)</li>
                             <li>• Data Modeling with dbt</li>
+                            <li>• Cloud Infrastructure (Azure, AWS, GCP)</li>
                         </ul>
                     </div>
 
@@ -604,6 +606,8 @@
                         <h4 class="text-xl font-bold mb-3">Cloud Platforms</h4>
                         <ul class="text-gray-400 text-sm space-y-2">
                             <li>• AWS (S3, Lambda, Glue, EC2)</li>
+                            <li>• Azure (ADF, Databricks, Synapse Analytics)</li>
+                            <li>• Microsoft Purview & Azure Monitor</li>
                             <li>• Google Cloud Platform</li>
                             <li>• Snowflake Data Cloud</li>
                             <li>• Azure Services</li>
@@ -718,6 +722,7 @@
                     </p>
                     <div class="flex flex-wrap gap-2 mb-6 relative z-10">
                         <span class="px-3 py-1 bg-gray-700/50 rounded-md text-xs text-gray-300 border border-gray-600/30">AWS</span>
+                        <span class="px-4 py-2 bg-gray-700/50 rounded-lg text-sm text-gray-300 border border-gray-600/30">Azure</span>
                         <span class="px-3 py-1 bg-gray-700/50 rounded-md text-xs text-gray-300 border border-gray-600/30">Snowflake</span>
                         <span class="px-3 py-1 bg-gray-700/50 rounded-md text-xs text-gray-300 border border-gray-600/30">GCP</span>
                         <span class="px-3 py-1 bg-gray-700/50 rounded-md text-xs text-gray-300 border border-gray-600/30">DBT</span>
@@ -904,6 +909,25 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <article class="project-card">
+                    <div class="h-52 overflow-hidden project-image">
+                        <img src="images/african-economic-pulse.png" alt="African Economic Pulse Azure Pipeline" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-3">
+                            <a href="https://github.com/Emmaue/africa-economic-pulse/blob/main/README.md" target="_blank" class="text-white hover:text-green-500 transition-colors">
+                                African Economic Pulse: Azure Medallion Data Pipeline
+                            </a>
+                        </h4>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                            End-to-end Azure data engineering project ingesting World Bank economic indicators through a Bronze/Silver/Gold Medallion architecture — ADF, Databricks, Synapse Analytics, Power BI, with governance via Microsoft Purview and observability via Azure Monitor.
+                        </p>
+                        <a href="https://github.com/Emmaue/africa-economic-pulse/blob/main/README.md" target="_blank" class="project-link inline-flex items-center">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
                 
                 <article class="project-card">
                     <div class="h-52 overflow-hidden project-image">
@@ -1002,17 +1026,6 @@
 
             </div>
 
-            <div class="text-center py-20">
-                <div class="inline-block text-green-500 mb-8 coming-soon-icon">
-                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                    </svg>
-                </div>
-                <h3 class="text-4xl font-extrabold mb-4 hero-title-gradient">More Projects Coming Soon!</h3>
-                <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                    I'm currently building exciting data engineering projects featuring Spark, Apache Kafka, Airflow, AWS, and modern data pipeline architectures.
-                </p>
-            </div>
         </div>
     </section>
 
